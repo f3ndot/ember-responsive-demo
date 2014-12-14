@@ -37,7 +37,7 @@ Running / Development
 * Visit your app at http://localhost:4200.
 
 
-## Further Reading / Useful Links
+Further Reading / Useful Links
 ---------------------------------
 
 * ember: http://emberjs.com/
