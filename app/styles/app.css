@@ -1,8 +1,16 @@
 html, body {
-  margin: 20px;
+  margin: 0;
   text-align: center;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.5;
+}
+.media-jumbo,
+.media-desktop,
+.media-tablet {
+  margin: 40px;
+}
+.media-mobile {
+  margin: 20px;
 }
 
 a {
