@@ -5,6 +5,13 @@ A demo of the Ember CLI addon `ember-responsive`.
 
 This README outlines the details of running on this Ember application locally.
 
+Files of Interest
+-----------------
+
+* `app/views/application.js` - How to bind breakpoint to class names
+* `app/controllers/index.js` - How to use `ember-responsive` in controllers
+* `app/templates/index.hbs` - How to use `ember-responsive` in templates
+
 Prerequisites
 -------------
 

@@ -1,0 +1,70 @@
+{{!-- Not the DRYist code, but it illustrates the point --}}
+{{#if media.isJumbo}}
+  <div class="block block-red">
+    <code>&#123;&#123;media.isJumbo&#125;&#125;</code> is <code>true</code>
+  </div>
+{{else}}
+  <div class="block">
+    <code>&#123;&#123;media.isJumbo&#125;&#125;</code> is <code>false</code>
+  </div>
+{{/if}}
+
+{{#if media.isDesktop}}
+  <div class="block block-orange">
+    <code>&#123;&#123;media.isDesktop&#125;&#125;</code> is <code>true</code>
+  </div>
+{{else}}
+  <div class="block">
+    <code>&#123;&#123;media.isDesktop&#125;&#125;</code> is <code>false</code>
+  </div>
+{{/if}}
+
+{{#if media.isTablet}}
+  <div class="block block-yellow">
+    <code>&#123;&#123;media.isTablet&#125;&#125;</code> is <code>true</code>
+  </div>
+{{else}}
+  <div class="block">
+    <code>&#123;&#123;media.isTablet&#125;&#125;</code> is <code>false</code>
+  </div>
+{{/if}}
+
+{{#if media.isMobile}}
+  <div class="block block-blue">
+    <code>&#123;&#123;media.isMobile&#125;&#125;</code> is <code>true</code>
+  </div>
+{{else}}
+  <div class="block">
+    <code>&#123;&#123;media.isMobile&#125;&#125;</code> is <code>false</code>
+  </div>
+{{/if}}
+
+<hr />
+
+<div {{bind-attr class=":block randomComputedProperty:block-dark-red"}}>
+  This is powered by the <code>randomComputedProperty</code> property, as
+  defined in the <code>IndexController</code>.
+
+  {{!-- Funny, I need to use this to style the demo! :-D --}}
+  {{#unless media.isMobile}}
+    <pre>this.get('isFoobar')               // ==> {{isFoobar}}
+this.get('media.isJumbo')          // ==> {{media.isJumbo}}
+this.get('randomComputedProperty') // ==> {{randomComputedProperty}}</pre>
+  {{else}}
+    <pre>this.get('isFoobar')
+// ==> {{isFoobar}}
+this.get('media.isJumbo')
+// ==> {{media.isJumbo}}
+this.get('randomComputedProperty')
+// ==> {{randomComputedProperty}}</pre>
+  {{/unless}}
+
+  <div><button {{action 'toggle'}}>Toggle isFoobar</button></div>
+</div>
+
+<hr />
+
+<div class="block some-semantic-name">
+  This is vanilla HTML and CSS selectors using classes applied by the
+  <code>ApplicationView</code>'s <code>classNameBindings</code>.
+</div>

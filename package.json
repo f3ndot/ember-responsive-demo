@@ -1,6 +1,7 @@
 {
   "name": "ember-responsive-demo",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "A demo of the Ember CLI addon `ember-responsive`",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -11,11 +12,15 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/f3ndot/ember-responsive-demo",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Justin A. S. Bull",
+    "email": "me@justinbull.ca",
+    "url": "https://www.justinbull.ca/"
+  },
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
@@ -30,5 +35,8 @@
     "ember-data": "1.0.0-beta.10",
     "express": "^4.8.5",
     "glob": "^4.0.5"
+  },
+  "dependencies": {
+    "ember-responsive": "^1.0.0"
   }
 }
