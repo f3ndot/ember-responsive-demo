@@ -3,6 +3,8 @@ ember-responsive-demo
 
 A demo of the Ember CLI addon `ember-responsive`.
 
+You can visit the demo app directly here: https://www.justinbull.ca/ember-responsive-demo/
+
 This README outlines the details of running on this Ember application locally.
 
 Files of Interest
